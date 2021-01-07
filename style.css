@@ -1,0 +1,221 @@
+html{
+    background-image: linear-gradient(to right,#1d4350,#A43931);
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width:1024px;
+    min-height: fit-content;
+}
+body {
+    background-image: url(images/image-lion-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header {
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:1px solid lightgray;
+}
+main{
+    min-height:300px;
+    display: flex;
+    align-items: center;
+}
+
+.main2{
+    min-height: 300px;
+    padding-top:50px;
+}
+.headbox1{
+    padding-right:100px;
+    flex:2
+
+}
+.headbox2{
+    flex:1
+}
+.cards{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.cards1{
+    background-image: url(images/image-background-card1-b.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height:300px;
+    width: 30%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
+}
+.cards2{
+    background-image: url(images/image-background-card2-b.jpg);
+    background-size: cover;
+    background-position: left;
+    min-height:250px;
+    width: 30%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
+}
+.cards3{
+    background-image: url(images/image-background-card3-b.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height:250px;
+    width: 30%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
+}
+.cards1,.cards2,.cards3{
+    padding:30px 30px 20px 30px;
+    box-sizing: border-box;
+    border-radius: 7px;  
+}
+.cards1 a,.cards2 a,.cards3 a{
+    display:none;
+}
+.cards1:hover a,.cards2:hover a,.cards3:hover a{
+    display:inline-block;
+}
+.cards1:hover,.cards2:hover,.cards3:hover{
+    border-radius: 7px; 
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.637);
+    transition-duration: 1s;
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.25rem;
+    padding-right: 40px;
+    text-shadow: 2px 2px 4px #000000;
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+    padding-top: 10px;
+    font-size: 2rem;
+
+}
+.main2 p{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 0rem;
+}
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.75rem;
+    margin-bottom:0.5rem;
+}
+
+.cards p {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top:10px ;
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+}
+i{
+    font-size: 100px;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+.mybutton{
+    background-color: white;
+    color:#1d4340;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: inline-block;
+    padding: 11px 25px;
+    margin-top: 15px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
+}
+.mybutton:hover{
+    border-radius: 2px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.603);
+}
+.testimonials {
+    margin-top:70px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tbox {
+    /* background-color: white; */
+    min-height: 200px;
+    width:47%;
+    box-sizing: border-box;
+    padding:50px;
+    border:1px solid white;
+    margin-bottom: 30px;
+    visibility:visible;
+    transition: 5s;
+
+}
+.tbox p{
+    display:none;
+}
+.tbox:hover p{
+    display: inline-block;
+}
+.tbox :last-child{
+    font-size:0.8rem;
+    padding-left: 270px;
+}
+
+.tbox:hover{
+    background-color: white;
+    color:#A43931;
+    font-size: 1.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition-duration: 0.27s;
+}
+
+.navbutton{
+    font-family: 'Source Sans Pro', sans-serif;
+    padding:11px 25px;
+    display: inline-block;
+    position: relative;
+}
+.dropdownbox{
+    display:none;
+    z-index: 1;
+    padding-top: 20px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.navbutton:hover .dropdownbox{
+    display:block;
+    position: absolute;
+}
+.dropdownbox .navbutton a{
+    padding-top:10px ;
+    margin-bottom: 10px;
+    color:black;
+}
+nav .navbutton:hover{
+    transition-duration: 0.1ms;
+    background-color:black;
+    border-radius: 100px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.479);
+}
+.dropdownbox .navbutton{
+    background-color: white;
+    text-align: center;
+    height:20px;
+    margin-bottom: 5px;
+    width:150px;
+    border-radius: 100px;
+    box-shadow:4px 4px 8px rgba(0, 0, 0, 0.164);
+}
+.dropdownbox .navbutton:hover{
+    background-color:lightgray;
+    color:white;
+    border-radius: 100px;
+    box-shadow:4px 4px 8px rgba(0, 0, 0, 0.603);
+}
